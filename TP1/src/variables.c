@@ -1,45 +1,45 @@
 #include <stdio.h>
 
-int main(void) {
-    printf("Affichage des valeurs des types de base :\n\n");
+int main() {
+    printf("Valeurs des types de base en C :\n\n");
 
-    // --- char ---
-    signed char c1 = -100;
-    unsigned char c2 = 200;
-    printf("signed char : %d\n", c1);
-    printf("unsigned char : %u\n\n", c2);
+    // Types caractères
+    signed char c_signed = -100;
+    unsigned char c_unsigned = 200;
+    printf("char (signed)        : %d\n", c_signed);
+    printf("char (unsigned)      : %u\n\n", c_unsigned);
 
-    // --- short ---
-    short s1 = -32000;
-    unsigned short s2 = 65000;
-    printf("short : %d\n", s1);
-    printf("unsigned short : %u\n\n", s2);
+    // Types entiers courts
+    signed short s_signed = -32000;
+    unsigned short s_unsigned = 65000;
+    printf("short (signed)       : %d\n", s_signed);
+    printf("short (unsigned)     : %u\n\n", s_unsigned);
 
-    // --- int ---
-    int i1 = -100000;
-    unsigned int i2 = 4000000000U;
-    printf("int : %d\n", i1);
-    printf("unsigned int : %u\n\n", i2);
+    // Types entiers
+    signed int i_signed = -100000;
+    unsigned int i_unsigned = 4000000000U;
+    printf("int (signed)         : %d\n", i_signed);
+    printf("int (unsigned)       : %u\n\n", i_unsigned);
 
-    // --- long ---
-    long l1 = -1000000000L;
-    unsigned long l2 = 3000000000UL;
-    printf("long : %ld\n", l1);
-    printf("unsigned long : %lu\n\n", l2);
+    // Types long
+    signed long l_signed = -1000000000L;
+    unsigned long l_unsigned = 3000000000UL;
+    printf("long int (signed)    : %ld\n", l_signed);
+    printf("long int (unsigned)  : %lu\n\n", l_unsigned);
 
-    // --- long long ---
-    long long ll1 = -9000000000000000000LL;
-    unsigned long long ll2 = 18000000000000000000ULL;
-    printf("long long : %lld\n", ll1);
-    printf("unsigned long long : %llu\n\n", ll2);
+    // Types long long
+    signed long long ll_signed = -9000000000000000000LL;
+    unsigned long long ll_unsigned = 18000000000000000000ULL;
+    printf("long long (signed)   : %lld\n", ll_signed);
+    printf("long long (unsigned) : %llu\n\n", ll_unsigned);
 
-    // --- flottants ---
+    // Types à virgule flottante
     float f = 3.14f;
     double d = 2.718281828;
     long double ld = 1.6180339887L;
-    printf("float : %f\n", f);
-    printf("double : %lf\n", d);
-    printf("long double : %Lf\n", ld);
+    printf("float                : %f\n", f);
+    printf("double               : %lf\n", d);
+    printf("long double          : %Lf\n", ld);
 
     return 0;
 }
